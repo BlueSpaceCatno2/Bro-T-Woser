@@ -12,7 +12,7 @@ UNCONFIRMED SECURITY! DONT BANK ON THIS!
 
 !NOTICE!
 
-this project is licensed by the open GL license, I am not responsible for your distribution of this program or your modifications. Any damaged caused by this program are legally not to be blamed on me.
+this project is licensed by the Apache 2.0 lisence, I am not responsible for your distribution of this program or your modifications. Any damaged caused by this program are legally not to be blamed on me.
 
 This is a beta of the project, and I will provide future updates soon.
 
