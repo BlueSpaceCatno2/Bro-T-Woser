@@ -1,0 +1,29 @@
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Project T.exe
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Project T.deps.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Project T.runtimeconfig.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Project T.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Project T.pdb
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\HtmlAgilityPack.dll
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.csproj.AssemblyReference.cache
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project_T.Form1.resources
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.csproj.GenerateResource.cache
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.AssemblyInfoInputs.cache
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.AssemblyInfo.cs
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.csproj.CoreCompileInputs.cache
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.csproj.Up2Date
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.dll
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\refint\Project T.dll
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.pdb
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project T.genruntimeconfig.cache
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\ref\Project T.dll
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\WebBrowserApp.Form1.resources
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
