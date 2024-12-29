@@ -3,7 +3,7 @@ A C# web browser, made for simple browsing, embedding, and open source, hackable
 
 
 The "Bro T Woser" runs using the NuGet packages: HtmlAgilityPack, and WebView2
-It browses the web, using HTML, CSS, and JS and has quick acess buttons for wikipedia, stackoverflow, github, and outlook
+It browses the web, using HTML, CSS, and JS and has quick acess buttons for wikipedia, stackoverflow, github, Spotify, A speed tester, Internet Archive, and outlook
 
 !NOTICE!
 
@@ -27,6 +27,8 @@ Buttons:
 
 ֎   -- Refresh
 
+∆   -- Load .DSK file (not yet fully implemented, does not currently function.)
+
 SearchIT -- Search (or press enter)
 
 Button3(internal) -- Change home screen and browser
@@ -47,5 +49,6 @@ EXPECT UPDATES CHECK GIT FREQUENTLY TO GET THE LATEST PATCHES, FEATURES, AND THE
 remember to install the following to execute the program:
 
 Visual studio -- NOT REQUIRED, BUT HANDY FOR EDITING AND COMPILING
-WebView2 Nuget pack -- used to... Webview I think?
+WebView2 Nuget pack -- used to view web
 HtmlAgilityPack Nuget Pack -- create URL paths to browse
+
