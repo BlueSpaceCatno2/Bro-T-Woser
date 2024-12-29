@@ -1,11 +1,113 @@
 {
   "version": 2,
-  "dgSpecHash": "ZjtUmVarHKY76h6ppx9zL5hfbZq38eHmdo9YUOUFi9DiROW5zNs++GciRhFY4Dgqru6r+v0ioBXILmUwqeyTBg==",
+  "dgSpecHash": "GJ7OUxc1+oKqbrYjuadQfnl7SR658gyVnwmW3VUonzb2MoSfeYZu7P78ZIaDeOO245eM2TVAVVh7f07PEDPkQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\khan\\source\\repos\\Project T\\Project T\\Project T.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\khan\\.nuget\\packages\\easytabs\\2.0.0\\easytabs.2.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\grpc.core.api\\2.33.1\\grpc.core.api.2.33.1.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\grpcdotnetnamedpipes\\1.4.4\\grpcdotnetnamedpipes.1.4.4.nupkg.sha512",
     "C:\\Users\\khan\\.nuget\\packages\\htmlagilitypack\\1.11.70\\htmlagilitypack.1.11.70.nupkg.sha512",
-    "C:\\Users\\khan\\.nuget\\packages\\microsoft.web.webview2\\1.0.2849.39\\microsoft.web.webview2.1.0.2849.39.nupkg.sha512"
+    "C:\\Users\\khan\\.nuget\\packages\\ithit.filesystem\\8.3.27213\\ithit.filesystem.8.3.27213.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\ithit.filesystem.windows\\8.3.27213\\ithit.filesystem.windows.8.3.27213.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\ithit.filesystem.windows.rpc.proto\\8.3.27213\\ithit.filesystem.windows.rpc.proto.8.3.27213.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\jquery\\1.6.0\\jquery.1.6.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\jquery.fileupload\\10.4.0\\jquery.fileupload.10.4.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\jquery.ui.combined\\1.9.0\\jquery.ui.combined.1.9.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\microsoft.web.webview2\\1.0.2849.39\\microsoft.web.webview2.1.0.2849.39.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\svg\\2.4.3\\svg.2.4.3.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.data.oledb\\6.0.0\\system.data.oledb.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.0\\system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.io.pipes.accesscontrol\\5.0.0\\system.io.pipes.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\webview2.runtime.x64\\130.0.2849.80\\webview2.runtime.x64.130.0.2849.80.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\win32interop.dwmapi\\1.0.1\\win32interop.dwmapi.1.0.1.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\win32interop.gdi32\\1.0.1\\win32interop.gdi32.1.0.1.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\win32interop.kernel32\\1.0.1\\win32interop.kernel32.1.0.1.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\win32interop.user32\\1.0.1\\win32interop.user32.1.0.1.nupkg.sha512",
+    "C:\\Users\\khan\\.nuget\\packages\\win32interop.uxtheme\\1.0.1\\win32interop.uxtheme.1.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EasyTabs 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EasyTabs",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Svg 2.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Svg",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Dwmapi 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Dwmapi",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Gdi32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Gdi32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Kernel32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Kernel32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.User32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.User32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Uxtheme 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Uxtheme",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
