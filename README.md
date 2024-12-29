@@ -52,3 +52,4 @@ Visual studio -- NOT REQUIRED, BUT HANDY FOR EDITING AND COMPILING
 WebView2 Nuget pack -- used to view web
 HtmlAgilityPack Nuget Pack -- create URL paths to browse
 
+Automatically ads www. and https:// to searches, when no end (.) is detected in the "url", this means if you put a . in your search it crashes btw if there isnt a number in the search, so it wont crash if you search "android 5.1 malware free download" like me.
