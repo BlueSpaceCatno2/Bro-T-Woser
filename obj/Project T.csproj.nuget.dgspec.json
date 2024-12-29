@@ -49,13 +49,29 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "EasyTabs": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.70, )"
             },
+            "ITHit.FileSystem.Windows": {
+              "target": "Package",
+              "version": "[8.3.27213, )"
+            },
             "Microsoft.Web.WebView2": {
               "target": "Package",
               "version": "[1.0.2849.39, )"
+            },
+            "WebView2.Runtime.X64": {
+              "target": "Package",
+              "version": "[130.0.2849.80, )"
+            },
+            "jQuery.FileUpload": {
+              "target": "Package",
+              "version": "[10.4.0, )"
             }
           },
           "imports": [

@@ -27,3 +27,191 @@ C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsof
 C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
 C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
 C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\EasyTabs.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Microsoft.WindowsAPICodePack.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Svg.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Win32Interop.Dwmapi.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Win32Interop.Gdi32.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Win32Interop.Kernel32.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Win32Interop.User32.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Win32Interop.Uxtheme.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\130.0.2849.80.manifest
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\AdSelectionAttestationsPreloaded\ad-selection-attestations.dat
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\AdSelectionAttestationsPreloaded\manifest.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\EBWebView\x64\EmbeddedBrowserWebView.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\EBWebView\x86\EmbeddedBrowserWebView.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Edge.dat
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\EdgeWebView.dat
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Extensions\external_extensions.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\af.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\am.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ar.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\as.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\az.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\bg.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\bn-IN.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\bs.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ca-Es-VALENCIA.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ca.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\cs.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\cy.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\da.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\de.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\el.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\en-GB.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\en-US.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\es-419.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\es.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\et.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\eu.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\fa.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\fi.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\fil.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\fr-CA.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\fr.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ga.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\gd.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\gl.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\gu.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\he.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\hi.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\hr.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\hu.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\id.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\is.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\it.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ja.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ka.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\kk.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\km.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\kn.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ko.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\kok.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\lb.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\lo.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\lt.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\lv.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\mi.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\mk.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ml.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\mr.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ms.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\mt.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\nb.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ne.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\nl.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\nn.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\or.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\pa.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\pl.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\pt-BR.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\pt-PT.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\qu.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ro.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ru.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sk.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sl.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sq.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sr-Cyrl-BA.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sr-Latn-RS.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sr.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\sv.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ta.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\te.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\th.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\tr.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\tt.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ug.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\uk.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\ur.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\vi.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\zh-CN.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Locales\zh-TW.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\MEIPreload\manifest.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\MEIPreload\preloaded_data.pb
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\PdfPreview\PdfPreviewHandler.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Advertising
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Analytics
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\CompatExceptions
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Content
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Cryptomining
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Entities
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Fingerprinting
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\LICENSE
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Other
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\Social
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Mu\TransparentAdvertisers
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Advertising
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Analytics
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Content
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Cryptomining
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Entities
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Fingerprinting
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\LICENSE
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Other
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Social
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\Sigma\Staging
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\Trust Protection Lists\manifest.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll.sig
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\WidevineCdm\manifest.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\concrt140.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\d3dcompiler_47.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\delegatedWebFeatures.sccd
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\dual_engine_adapter_x64.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\dxcompiler.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\dxil.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\edge_feedback\camera_mf_trace.wprp
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\edge_feedback\mf_trace.wprp
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\edge_game_assist\EdgeGameAssist.msix
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\edge_game_assist\VERSION
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\eventlog_provider.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\ffmpeg.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\icudtl.dat
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\learning_tools.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\libEGL.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\libGLESv2.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\microsoft_shell_integration.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\mip_core.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\mip_protection_sdk.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge.dll.sig
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge_100_percent.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge_200_percent.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge_elf.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedge_wer.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedgewebview2.exe
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msedgewebview2.exe.sig
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\mspdf.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msvcp140.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\msvcp140_codecvt_ids.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\notification_helper.exe
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\oneauth.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\oneds.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\onnxruntime.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\onramp.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\prefs_enclave_x64.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\resources.pak
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\show_third_party_software_licenses.bat
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\telclient.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\v8_context_snapshot.bin
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vccorlib140.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vcruntime140.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vcruntime140_1.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vk_swiftshader.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vk_swiftshader_icd.json
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\vulkan-1.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\wdag.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\webview2_integration.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\WebView2\wns_push_client.dll
+C:\Users\khan\source\repos\Project T\Project T\obj\Debug\net8.0-windows\Project_T.Properties.Resources.resources
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\Grpc.Core.Api.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\GrpcDotNetNamedPipes.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\ITHit.FileSystem.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\ITHit.FileSystem.Windows.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\ITHit.FileSystem.Windows.Rpc.Proto.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\System.Data.OleDb.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\khan\source\repos\Project T\Project T\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll

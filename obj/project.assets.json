@@ -2,6 +2,79 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "EasyTabs/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Svg": "2.4.3",
+          "Win32Interop.Dwmapi": "1.0.1",
+          "Win32Interop.Gdi32": "1.0.1",
+          "Win32Interop.Kernel32": "1.0.1",
+          "Win32Interop.User32": "1.0.1",
+          "Win32Interop.Uxtheme": "1.0.1"
+        },
+        "compile": {
+          "lib/net40/EasyTabs.dll": {
+            "related": ".XML"
+          },
+          "lib/net40/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/net40/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/net40/EasyTabs.dll": {
+            "related": ".XML"
+          },
+          "lib/net40/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/net40/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "Google.Protobuf/3.14.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.33.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "GrpcDotNetNamedPipes/1.4.4": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.14.0",
+          "Grpc.Core.Api": "2.33.1",
+          "System.IO.Pipes.AccessControl": "5.0.0",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/GrpcDotNetNamedPipes.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/GrpcDotNetNamedPipes.dll": {}
+        }
+      },
       "HtmlAgilityPack/1.11.70": {
         "type": "package",
         "compile": {
@@ -13,6 +86,71 @@
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
           }
+        }
+      },
+      "ITHit.FileSystem/8.3.27213": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "8.0.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/ITHit.FileSystem.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ITHit.FileSystem.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ITHit.FileSystem.Windows/8.3.27213": {
+        "type": "package",
+        "dependencies": {
+          "GrpcDotNetNamedPipes": "1.4.4",
+          "ITHit.FileSystem": "8.3.27213",
+          "ITHit.FileSystem.Windows.Rpc.Proto": "8.3.27213",
+          "System.Data.OleDb": "6.0.0",
+          "System.Security.Principal.Windows": "5.0.0",
+          "System.Text.Json": "8.0.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/ITHit.FileSystem.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ITHit.FileSystem.Windows.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ITHit.FileSystem.Windows.Rpc.Proto/8.3.27213": {
+        "type": "package",
+        "dependencies": {
+          "GrpcDotNetNamedPipes": "1.4.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/ITHit.FileSystem.Windows.Rpc.Proto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ITHit.FileSystem.Windows.Rpc.Proto.dll": {}
+        }
+      },
+      "jQuery/1.6.0": {
+        "type": "package"
+      },
+      "jQuery.FileUpload/10.4.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.6.0",
+          "jQuery.UI.Combined": "1.9.0"
+        }
+      },
+      "jQuery.UI.Combined/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.4.4"
         }
       },
       "Microsoft.Web.WebView2/1.0.2849.39": {
@@ -34,10 +172,1461 @@
             "rid": "win-x86"
           }
         }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Svg/2.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/Svg.dll": {}
+        },
+        "runtime": {
+          "lib/Svg.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
+          "System.Security.Permissions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Data.OleDb/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "System.Diagnostics.PerformanceCounter": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Data.OleDb.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.IO.Pipes.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/net5.0/System.IO.Pipes.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.IO.Pipes.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net5.0/System.IO.Pipes.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Permissions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.0",
+          "System.Windows.Extensions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Json/8.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.Windows.Extensions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Windows.Extensions.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "WebView2.Runtime.X64/130.0.2849.80": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.WebView2": "1.0.1587.40"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/WebView2/130.0.2849.80.manifest": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/130.0.2849.80.manifest"
+          },
+          "contentFiles/any/any/WebView2/AdSelectionAttestationsPreloaded/ad-selection-attestations.dat": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/AdSelectionAttestationsPreloaded/ad-selection-attestations.dat"
+          },
+          "contentFiles/any/any/WebView2/AdSelectionAttestationsPreloaded/manifest.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/AdSelectionAttestationsPreloaded/manifest.json"
+          },
+          "contentFiles/any/any/WebView2/EBWebView/x64/EmbeddedBrowserWebView.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/EBWebView/x64/EmbeddedBrowserWebView.dll"
+          },
+          "contentFiles/any/any/WebView2/EBWebView/x86/EmbeddedBrowserWebView.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/EBWebView/x86/EmbeddedBrowserWebView.dll"
+          },
+          "contentFiles/any/any/WebView2/Edge.dat": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Edge.dat"
+          },
+          "contentFiles/any/any/WebView2/EdgeWebView.dat": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/EdgeWebView.dat"
+          },
+          "contentFiles/any/any/WebView2/Extensions/external_extensions.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Extensions/external_extensions.json"
+          },
+          "contentFiles/any/any/WebView2/Locales/af.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/af.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/am.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/am.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ar.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ar.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/as.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/as.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/az.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/az.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/bg.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/bg.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/bn-IN.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/bn-IN.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/bs.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/bs.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ca-Es-VALENCIA.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ca-Es-VALENCIA.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ca.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ca.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/cs.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/cs.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/cy.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/cy.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/da.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/da.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/de.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/de.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/el.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/el.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/en-GB.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/en-GB.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/en-US.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/en-US.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/es-419.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/es-419.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/es.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/es.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/et.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/et.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/eu.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/eu.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/fa.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/fa.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/fi.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/fi.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/fil.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/fil.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/fr-CA.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/fr-CA.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/fr.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/fr.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ga.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ga.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/gd.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/gd.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/gl.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/gl.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/gu.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/gu.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/he.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/he.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/hi.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/hi.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/hr.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/hr.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/hu.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/hu.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/id.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/id.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/is.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/is.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/it.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/it.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ja.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ja.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ka.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ka.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/kk.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/kk.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/km.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/km.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/kn.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/kn.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ko.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ko.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/kok.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/kok.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/lb.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/lb.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/lo.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/lo.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/lt.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/lt.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/lv.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/lv.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/mi.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/mi.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/mk.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/mk.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ml.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ml.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/mr.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/mr.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ms.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ms.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/mt.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/mt.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/nb.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/nb.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ne.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ne.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/nl.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/nl.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/nn.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/nn.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/or.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/or.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/pa.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/pa.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/pl.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/pl.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/pt-BR.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/pt-BR.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/pt-PT.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/pt-PT.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/qu.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/qu.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ro.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ro.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ru.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ru.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sk.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sk.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sl.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sl.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sq.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sq.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sr-Cyrl-BA.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sr-Cyrl-BA.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sr-Latn-RS.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sr-Latn-RS.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sr.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sr.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/sv.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/sv.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ta.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ta.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/te.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/te.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/th.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/th.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/tr.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/tr.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/tt.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/tt.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ug.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ug.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/uk.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/uk.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/ur.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/ur.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/vi.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/vi.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/zh-CN.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/zh-CN.pak"
+          },
+          "contentFiles/any/any/WebView2/Locales/zh-TW.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Locales/zh-TW.pak"
+          },
+          "contentFiles/any/any/WebView2/MEIPreload/manifest.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/MEIPreload/manifest.json"
+          },
+          "contentFiles/any/any/WebView2/MEIPreload/preloaded_data.pb": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/MEIPreload/preloaded_data.pb"
+          },
+          "contentFiles/any/any/WebView2/PdfPreview/PdfPreviewHandler.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/PdfPreview/PdfPreviewHandler.dll"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Advertising": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Advertising"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Analytics": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Analytics"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/CompatExceptions": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/CompatExceptions"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Content": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Content"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Cryptomining": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Cryptomining"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Entities": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Entities"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Fingerprinting": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Fingerprinting"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/LICENSE": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/LICENSE"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Other": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Other"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Social": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/Social"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/TransparentAdvertisers": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Mu/TransparentAdvertisers"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Advertising": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Advertising"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Analytics": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Analytics"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Content": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Content"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Cryptomining": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Cryptomining"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Entities": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Entities"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Fingerprinting": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Fingerprinting"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/LICENSE": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/LICENSE"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Other": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Other"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Social": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Social"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Staging": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/Sigma/Staging"
+          },
+          "contentFiles/any/any/WebView2/Trust Protection Lists/manifest.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/Trust Protection Lists/manifest.json"
+          },
+          "contentFiles/any/any/WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll"
+          },
+          "contentFiles/any/any/WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig"
+          },
+          "contentFiles/any/any/WebView2/WidevineCdm/manifest.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/WidevineCdm/manifest.json"
+          },
+          "contentFiles/any/any/WebView2/concrt140.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/concrt140.dll"
+          },
+          "contentFiles/any/any/WebView2/d3dcompiler_47.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/d3dcompiler_47.dll"
+          },
+          "contentFiles/any/any/WebView2/delegatedWebFeatures.sccd": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/delegatedWebFeatures.sccd"
+          },
+          "contentFiles/any/any/WebView2/dual_engine_adapter_x64.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/dual_engine_adapter_x64.dll"
+          },
+          "contentFiles/any/any/WebView2/dxcompiler.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/dxcompiler.dll"
+          },
+          "contentFiles/any/any/WebView2/dxil.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/dxil.dll"
+          },
+          "contentFiles/any/any/WebView2/edge_feedback/camera_mf_trace.wprp": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/edge_feedback/camera_mf_trace.wprp"
+          },
+          "contentFiles/any/any/WebView2/edge_feedback/mf_trace.wprp": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/edge_feedback/mf_trace.wprp"
+          },
+          "contentFiles/any/any/WebView2/edge_game_assist/EdgeGameAssist.msix": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/edge_game_assist/EdgeGameAssist.msix"
+          },
+          "contentFiles/any/any/WebView2/edge_game_assist/VERSION": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/edge_game_assist/VERSION"
+          },
+          "contentFiles/any/any/WebView2/eventlog_provider.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/eventlog_provider.dll"
+          },
+          "contentFiles/any/any/WebView2/ffmpeg.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/ffmpeg.dll"
+          },
+          "contentFiles/any/any/WebView2/icudtl.dat": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/icudtl.dat"
+          },
+          "contentFiles/any/any/WebView2/learning_tools.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/learning_tools.dll"
+          },
+          "contentFiles/any/any/WebView2/libEGL.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/libEGL.dll"
+          },
+          "contentFiles/any/any/WebView2/libGLESv2.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/libGLESv2.dll"
+          },
+          "contentFiles/any/any/WebView2/microsoft_shell_integration.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/microsoft_shell_integration.dll"
+          },
+          "contentFiles/any/any/WebView2/mip_core.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/mip_core.dll"
+          },
+          "contentFiles/any/any/WebView2/mip_protection_sdk.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/mip_protection_sdk.dll"
+          },
+          "contentFiles/any/any/WebView2/msedge.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge.dll"
+          },
+          "contentFiles/any/any/WebView2/msedge.dll.sig": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge.dll.sig"
+          },
+          "contentFiles/any/any/WebView2/msedge_100_percent.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge_100_percent.pak"
+          },
+          "contentFiles/any/any/WebView2/msedge_200_percent.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge_200_percent.pak"
+          },
+          "contentFiles/any/any/WebView2/msedge_elf.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge_elf.dll"
+          },
+          "contentFiles/any/any/WebView2/msedge_wer.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedge_wer.dll"
+          },
+          "contentFiles/any/any/WebView2/msedgewebview2.exe": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedgewebview2.exe"
+          },
+          "contentFiles/any/any/WebView2/msedgewebview2.exe.sig": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msedgewebview2.exe.sig"
+          },
+          "contentFiles/any/any/WebView2/mspdf.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/mspdf.dll"
+          },
+          "contentFiles/any/any/WebView2/msvcp140.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msvcp140.dll"
+          },
+          "contentFiles/any/any/WebView2/msvcp140_codecvt_ids.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/msvcp140_codecvt_ids.dll"
+          },
+          "contentFiles/any/any/WebView2/notification_helper.exe": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/notification_helper.exe"
+          },
+          "contentFiles/any/any/WebView2/oneauth.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/oneauth.dll"
+          },
+          "contentFiles/any/any/WebView2/oneds.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/oneds.dll"
+          },
+          "contentFiles/any/any/WebView2/onnxruntime.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/onnxruntime.dll"
+          },
+          "contentFiles/any/any/WebView2/onramp.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/onramp.dll"
+          },
+          "contentFiles/any/any/WebView2/prefs_enclave_x64.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/prefs_enclave_x64.dll"
+          },
+          "contentFiles/any/any/WebView2/resources.pak": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/resources.pak"
+          },
+          "contentFiles/any/any/WebView2/show_third_party_software_licenses.bat": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/show_third_party_software_licenses.bat"
+          },
+          "contentFiles/any/any/WebView2/telclient.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/telclient.dll"
+          },
+          "contentFiles/any/any/WebView2/v8_context_snapshot.bin": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/v8_context_snapshot.bin"
+          },
+          "contentFiles/any/any/WebView2/vccorlib140.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vccorlib140.dll"
+          },
+          "contentFiles/any/any/WebView2/vcruntime140.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vcruntime140.dll"
+          },
+          "contentFiles/any/any/WebView2/vcruntime140_1.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vcruntime140_1.dll"
+          },
+          "contentFiles/any/any/WebView2/vk_swiftshader.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vk_swiftshader.dll"
+          },
+          "contentFiles/any/any/WebView2/vk_swiftshader_icd.json": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vk_swiftshader_icd.json"
+          },
+          "contentFiles/any/any/WebView2/vulkan-1.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/vulkan-1.dll"
+          },
+          "contentFiles/any/any/WebView2/wdag.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/wdag.dll"
+          },
+          "contentFiles/any/any/WebView2/webview2_integration.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/webview2_integration.dll"
+          },
+          "contentFiles/any/any/WebView2/wns_push_client.dll": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "WebView2/wns_push_client.dll"
+          }
+        }
+      },
+      "Win32Interop.Dwmapi/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Win32Interop.User32": "1.0.1",
+          "Win32Interop.Uxtheme": "1.0.1"
+        },
+        "compile": {
+          "lib/Win32Interop.Dwmapi.dll": {}
+        },
+        "runtime": {
+          "lib/Win32Interop.Dwmapi.dll": {}
+        }
+      },
+      "Win32Interop.Gdi32/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Win32Interop.User32": "1.0.1"
+        },
+        "compile": {
+          "lib/Win32Interop.Gdi32.dll": {}
+        },
+        "runtime": {
+          "lib/Win32Interop.Gdi32.dll": {}
+        }
+      },
+      "Win32Interop.Kernel32/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Win32Interop.Kernel32.dll": {}
+        },
+        "runtime": {
+          "lib/Win32Interop.Kernel32.dll": {}
+        }
+      },
+      "Win32Interop.User32/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Win32Interop.User32.dll": {}
+        },
+        "runtime": {
+          "lib/Win32Interop.User32.dll": {}
+        }
+      },
+      "Win32Interop.Uxtheme/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Win32Interop.User32": "1.0.1"
+        },
+        "compile": {
+          "lib/Win32Interop.Uxtheme.dll": {}
+        },
+        "runtime": {
+          "lib/Win32Interop.Uxtheme.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "EasyTabs/2.0.0": {
+      "sha512": "3Kfh4mATMLMpWPW+yM3jKndDkJ4LpTtOBjjh0kVHENohcJJyXAQ+OmeMR1qV1Tj70r2tRsTDohcorG5XnC/1+A==",
+      "type": "package",
+      "path": "easytabs/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easytabs.2.0.0.nupkg.sha512",
+        "easytabs.nuspec",
+        "lib/net40/EasyTabs.XML",
+        "lib/net40/EasyTabs.dll",
+        "lib/net40/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/net40/Microsoft.WindowsAPICodePack.dll"
+      ]
+    },
+    "Google.Protobuf/3.14.0": {
+      "sha512": "9AkodyGNmLI+wJJPbwpWLmh4BMHoXDQ9+8qvDPhQQi/BNsleqKMBn3OlyLwC6CALwan2kc5+Cenb8fJSITX3nQ==",
+      "type": "package",
+      "path": "google.protobuf/3.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.14.0.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.Core.Api/2.33.1": {
+      "sha512": "5uRHXXy0xJaiatd2b542jKemTkC5wR/27d2wVBBl0J5Nf/ubfZlrfCAX/hdQuLHoLPRnuYmf9iG2uXZfT2230w==",
+      "type": "package",
+      "path": "grpc.core.api/2.33.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.core.api.2.33.1.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net45/Grpc.Core.Api.dll",
+        "lib/net45/Grpc.Core.Api.pdb",
+        "lib/net45/Grpc.Core.Api.xml",
+        "lib/netstandard1.5/Grpc.Core.Api.dll",
+        "lib/netstandard1.5/Grpc.Core.Api.pdb",
+        "lib/netstandard1.5/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
+    "GrpcDotNetNamedPipes/1.4.4": {
+      "sha512": "ar0bCOPypOXsTeXmff0cl7CmhVCPZOQAnK1P5NYdiafjGpurhV0GxhZNPvfvoX0AYNhjK+iOYC1QXHsI2OJEbg==",
+      "type": "package",
+      "path": "grpcdotnetnamedpipes/1.4.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "grpcdotnetnamedpipes.1.4.4.nupkg.sha512",
+        "grpcdotnetnamedpipes.nuspec",
+        "lib/net46/GrpcDotNetNamedPipes.dll",
+        "lib/net5.0-windows7.0/GrpcDotNetNamedPipes.dll",
+        "lib/netcoreapp2.1/GrpcDotNetNamedPipes.dll",
+        "lib/netstandard2.0/GrpcDotNetNamedPipes.dll",
+        "lib/netstandard2.1/GrpcDotNetNamedPipes.dll"
+      ]
+    },
     "HtmlAgilityPack/1.11.70": {
       "sha512": "lwCgdq4H+WXH+lkM7TvJhyEs5uNGzoTud1VmXz2jr30/yOTRtG/oMCour5JMTN0t0fU4uFwFYIrDd98FH2RKsQ==",
       "type": "package",
@@ -85,6 +1674,172 @@
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri",
         "readme.md"
+      ]
+    },
+    "ITHit.FileSystem/8.3.27213": {
+      "sha512": "40YUnCf3qKZwkFKwzrcH9zhVqqVm2vxzD0Ux62rRsUdFS2p8Tl1kmtn/yPLpmQQ8ZJabky6Z81nwHe2aLo1VQg==",
+      "type": "package",
+      "path": "ithit.filesystem/8.3.27213",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "ithit.filesystem.8.3.27213.nupkg.sha512",
+        "ithit.filesystem.nuspec",
+        "lib/netstandard2.0/ITHit.FileSystem.dll",
+        "lib/netstandard2.0/ITHit.FileSystem.xml",
+        "user-file-system-license-agreement.md"
+      ]
+    },
+    "ITHit.FileSystem.Windows/8.3.27213": {
+      "sha512": "9y+RIMLp53G/El3851wZQThbC5V0/onsigBnbkHULKXJ18bOHaNoNOj7ue4M2XJh262dbGA1HOvKNuBi4nMqew==",
+      "type": "package",
+      "path": "ithit.filesystem.windows/8.3.27213",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "ithit.filesystem.windows.8.3.27213.nupkg.sha512",
+        "ithit.filesystem.windows.nuspec",
+        "lib/netstandard2.0/ITHit.FileSystem.Windows.dll",
+        "lib/netstandard2.0/ITHit.FileSystem.Windows.xml",
+        "user-file-system-license-agreement.md"
+      ]
+    },
+    "ITHit.FileSystem.Windows.Rpc.Proto/8.3.27213": {
+      "sha512": "SFVUVp8+hh57jsnIp6r9oVCE7GZcqfw64CTyZekcVWUzbLOjg0lxVvq2YirgsLnKIaPusTu7hFNwv30iRYV8Hw==",
+      "type": "package",
+      "path": "ithit.filesystem.windows.rpc.proto/8.3.27213",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "ithit.filesystem.windows.rpc.proto.8.3.27213.nupkg.sha512",
+        "ithit.filesystem.windows.rpc.proto.nuspec",
+        "lib/netstandard2.0/ITHit.FileSystem.Windows.Rpc.Proto.dll",
+        "user-file-system-license-agreement.md"
+      ]
+    },
+    "jQuery/1.6.0": {
+      "sha512": "ARsNw9AbyHtzxgucEKXOy15HyzRdLOxchTvdYQYRGixTT6gM3KRnnW0h/auhvqjm9CayeqVf1ihNzhlaKI+yXw==",
+      "type": "package",
+      "path": "jquery/1.6.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.6-vsdoc.js",
+        "Content/Scripts/jquery-1.6.js",
+        "Content/Scripts/jquery-1.6.min.js",
+        "Tools/install.ps1",
+        "Tools/jquery-1.6-vsdoc-para.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.6.0.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "jQuery.FileUpload/10.4.0": {
+      "sha512": "F+sN8Az99PGpHTZ9Y6B1bcaq/aPNaAn5sRVbCcoX5uuidDbDn8NLqZGkV6IEx0IUnyP0JvOFANMfAKxZPqvPCQ==",
+      "type": "package",
+      "path": "jquery.fileupload/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/jQuery.FileUpload/css/jquery.fileupload-noscript.css",
+        "content/Content/jQuery.FileUpload/css/jquery.fileupload-ui-noscript.css",
+        "content/Content/jQuery.FileUpload/css/jquery.fileupload-ui.css",
+        "content/Content/jQuery.FileUpload/css/jquery.fileupload.css",
+        "content/Content/jQuery.FileUpload/img/loading.gif",
+        "content/Content/jQuery.FileUpload/img/progressbar.gif",
+        "content/Scripts/jQuery.FileUpload/cors/jquery.postmessage-transport.js",
+        "content/Scripts/jQuery.FileUpload/cors/jquery.xdr-transport.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-audio.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-image.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-process.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-ui.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-validate.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload-video.js",
+        "content/Scripts/jQuery.FileUpload/jquery.fileupload.js",
+        "content/Scripts/jQuery.FileUpload/jquery.iframe-transport.js",
+        "jquery.fileupload.10.4.0.nupkg.sha512",
+        "jquery.fileupload.nuspec"
+      ]
+    },
+    "jQuery.UI.Combined/1.9.0": {
+      "sha512": "Yia0Ob6PxyxosFitcAeEEuyi9lLIbRg/TUZAeZUj8TNBf7Qs8cZ7JwIvTPjrCffu9ajkGHFfZ/QbcJhU00BGhA==",
+      "type": "package",
+      "path": "jquery.ui.combined/1.9.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png",
+        "Content/Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png",
+        "Content/Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+        "Content/Content/themes/base/images/ui-icons_222222_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_2e83ff_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_454545_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_888888_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_cd0a0a_256x240.png",
+        "Content/Content/themes/base/jquery-ui.css",
+        "Content/Content/themes/base/jquery.ui.accordion.css",
+        "Content/Content/themes/base/jquery.ui.all.css",
+        "Content/Content/themes/base/jquery.ui.autocomplete.css",
+        "Content/Content/themes/base/jquery.ui.base.css",
+        "Content/Content/themes/base/jquery.ui.button.css",
+        "Content/Content/themes/base/jquery.ui.core.css",
+        "Content/Content/themes/base/jquery.ui.datepicker.css",
+        "Content/Content/themes/base/jquery.ui.dialog.css",
+        "Content/Content/themes/base/jquery.ui.menu.css",
+        "Content/Content/themes/base/jquery.ui.progressbar.css",
+        "Content/Content/themes/base/jquery.ui.resizable.css",
+        "Content/Content/themes/base/jquery.ui.selectable.css",
+        "Content/Content/themes/base/jquery.ui.slider.css",
+        "Content/Content/themes/base/jquery.ui.spinner.css",
+        "Content/Content/themes/base/jquery.ui.tabs.css",
+        "Content/Content/themes/base/jquery.ui.theme.css",
+        "Content/Content/themes/base/jquery.ui.tooltip.css",
+        "Content/Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png",
+        "Content/Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+        "Content/Content/themes/base/minified/images/ui-icons_222222_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_454545_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_888888_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png",
+        "Content/Content/themes/base/minified/jquery-ui.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.accordion.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.autocomplete.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.button.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.core.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.datepicker.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.dialog.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.menu.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.progressbar.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.resizable.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.selectable.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.slider.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.spinner.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.tabs.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.theme.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.tooltip.min.css",
+        "Content/Scripts/jquery-ui-1.9.0.js",
+        "Content/Scripts/jquery-ui-1.9.0.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/uninstall.ps1",
+        "jquery.ui.combined.1.9.0.nupkg.sha512",
+        "jquery.ui.combined.nuspec"
       ]
     },
     "Microsoft.Web.WebView2/1.0.2849.39": {
@@ -183,12 +1938,755 @@
         "tools/wv2winrt/zh-Hans/System.CommandLine.resources.dll",
         "tools/wv2winrt/zh-Hant/System.CommandLine.resources.dll"
       ]
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
+        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Svg/2.4.3": {
+      "sha512": "5HuSl7iaYbMZG9lnuGHnJ+hgiy6stmiRgVYdwAdyPVAdeDG9P5is2K0UT9kM6mKOnhHDjXRok85nx5DNKRgZEg==",
+      "type": "package",
+      "path": "svg/2.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Svg.XML",
+        "lib/Svg.dll",
+        "lib/Svg.pdb",
+        "svg.2.4.3.nupkg.sha512",
+        "svg.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/6.0.0": {
+      "sha512": "7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Data.OleDb/6.0.0": {
+      "sha512": "LQ8PjTIF1LtrrlGiyiTVjAkQtTWKm9GSNnygIlWjhN9y88s7xhy6DUNDDkmQQ9f6ex7mA4k0Tl97lz/CklaiLg==",
+      "type": "package",
+      "path": "system.data.oledb/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Data.OleDb.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Data.OleDb.dll",
+        "lib/net461/System.Data.OleDb.xml",
+        "lib/net6.0/System.Data.OleDb.dll",
+        "lib/net6.0/System.Data.OleDb.xml",
+        "lib/netstandard2.0/System.Data.OleDb.dll",
+        "lib/netstandard2.0/System.Data.OleDb.xml",
+        "runtimes/win/lib/net461/System.Data.OleDb.dll",
+        "runtimes/win/lib/net461/System.Data.OleDb.xml",
+        "runtimes/win/lib/net6.0/System.Data.OleDb.dll",
+        "runtimes/win/lib/net6.0/System.Data.OleDb.xml",
+        "runtimes/win/lib/netstandard2.0/System.Data.OleDb.dll",
+        "runtimes/win/lib/netstandard2.0/System.Data.OleDb.xml",
+        "system.data.oledb.6.0.0.nupkg.sha512",
+        "system.data.oledb.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "sha512": "gbeE5tNp/oB7O8kTTLh3wPPJCxpNOphXPTWVs1BsYuFOYapFijWuh0LYw1qnDo4gwDUYPXOmpTIhvtxisGsYOQ==",
+      "type": "package",
+      "path": "system.diagnostics.performancecounter/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.PerformanceCounter.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net461/System.Diagnostics.PerformanceCounter.xml",
+        "lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.xml",
+        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
+        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.xml",
+        "system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
+        "system.diagnostics.performancecounter.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Drawing.Common/6.0.0": {
+      "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "type": "package",
+      "path": "system.drawing.common/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/net461/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "system.drawing.common.6.0.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Pipes.AccessControl/5.0.0": {
+      "sha512": "P0FIsXSFNL1AXlHO9zpJ9atRUzVyoPZCkcbkYGZfXXMx9xlGA2H3HOGBwIhpKhB+h0eL3hry/z0UcfJZ+yb2kQ==",
+      "type": "package",
+      "path": "system.io.pipes.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.Pipes.AccessControl.dll",
+        "lib/net461/System.IO.Pipes.AccessControl.dll",
+        "lib/net5.0/System.IO.Pipes.AccessControl.dll",
+        "lib/net5.0/System.IO.Pipes.AccessControl.xml",
+        "lib/netstandard1.3/System.IO.Pipes.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.Pipes.AccessControl.dll",
+        "ref/net46/System.IO.Pipes.AccessControl.dll",
+        "ref/net461/System.IO.Pipes.AccessControl.dll",
+        "ref/net461/System.IO.Pipes.AccessControl.xml",
+        "ref/net5.0/System.IO.Pipes.AccessControl.dll",
+        "ref/net5.0/System.IO.Pipes.AccessControl.xml",
+        "ref/netstandard1.3/System.IO.Pipes.AccessControl.dll",
+        "ref/netstandard2.0/System.IO.Pipes.AccessControl.dll",
+        "ref/netstandard2.0/System.IO.Pipes.AccessControl.xml",
+        "runtimes/win/lib/net46/System.IO.Pipes.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.Pipes.AccessControl.dll",
+        "runtimes/win/lib/net5.0/System.IO.Pipes.AccessControl.dll",
+        "runtimes/win/lib/net5.0/System.IO.Pipes.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.IO.Pipes.AccessControl.dll",
+        "system.io.pipes.accesscontrol.5.0.0.nupkg.sha512",
+        "system.io.pipes.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/6.0.0": {
+      "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
+      "type": "package",
+      "path": "system.security.accesscontrol/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.AccessControl.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/net6.0/System.Security.AccessControl.dll",
+        "lib/net6.0/System.Security.AccessControl.xml",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/net6.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net6.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.xml",
+        "system.security.accesscontrol.6.0.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/6.0.0": {
+      "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Permissions/6.0.0": {
+      "sha512": "T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
+      "type": "package",
+      "path": "system.security.permissions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Permissions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/net5.0/System.Security.Permissions.dll",
+        "lib/net5.0/System.Security.Permissions.xml",
+        "lib/net6.0/System.Security.Permissions.dll",
+        "lib/net6.0/System.Security.Permissions.xml",
+        "lib/netcoreapp3.1/System.Security.Permissions.dll",
+        "lib/netcoreapp3.1/System.Security.Permissions.xml",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.xml",
+        "runtimes/win/lib/net461/System.Security.Permissions.dll",
+        "runtimes/win/lib/net461/System.Security.Permissions.xml",
+        "system.security.permissions.6.0.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "type": "package",
+      "path": "system.security.principal.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.5.0.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/8.0.5": {
+      "sha512": "0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
+      "type": "package",
+      "path": "system.text.json/8.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net6.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net6.0/System.Text.Json.dll",
+        "lib/net6.0/System.Text.Json.xml",
+        "lib/net7.0/System.Text.Json.dll",
+        "lib/net7.0/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.8.0.5.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Windows.Extensions/6.0.0": {
+      "sha512": "IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
+      "type": "package",
+      "path": "system.windows.extensions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/System.Windows.Extensions.dll",
+        "lib/net6.0/System.Windows.Extensions.xml",
+        "lib/netcoreapp3.1/System.Windows.Extensions.dll",
+        "lib/netcoreapp3.1/System.Windows.Extensions.xml",
+        "runtimes/win/lib/net6.0/System.Windows.Extensions.dll",
+        "runtimes/win/lib/net6.0/System.Windows.Extensions.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Windows.Extensions.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Windows.Extensions.xml",
+        "system.windows.extensions.6.0.0.nupkg.sha512",
+        "system.windows.extensions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "WebView2.Runtime.X64/130.0.2849.80": {
+      "sha512": "RUQ6mCTXIKo5n4ko7T0l2jrysYQZw5PoOGMi90nocWK4A/uBdGOyh14llluAT6ahwyQ4NVEkG5+2yUsxGZx+CQ==",
+      "type": "package",
+      "path": "webview2.runtime.x64/130.0.2849.80",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "contentFiles/any/any/WebView2/130.0.2849.80.manifest",
+        "contentFiles/any/any/WebView2/AdSelectionAttestationsPreloaded/ad-selection-attestations.dat",
+        "contentFiles/any/any/WebView2/AdSelectionAttestationsPreloaded/manifest.json",
+        "contentFiles/any/any/WebView2/EBWebView/x64/EmbeddedBrowserWebView.dll",
+        "contentFiles/any/any/WebView2/EBWebView/x86/EmbeddedBrowserWebView.dll",
+        "contentFiles/any/any/WebView2/Edge.dat",
+        "contentFiles/any/any/WebView2/EdgeWebView.dat",
+        "contentFiles/any/any/WebView2/Extensions/external_extensions.json",
+        "contentFiles/any/any/WebView2/Locales/af.pak",
+        "contentFiles/any/any/WebView2/Locales/am.pak",
+        "contentFiles/any/any/WebView2/Locales/ar.pak",
+        "contentFiles/any/any/WebView2/Locales/as.pak",
+        "contentFiles/any/any/WebView2/Locales/az.pak",
+        "contentFiles/any/any/WebView2/Locales/bg.pak",
+        "contentFiles/any/any/WebView2/Locales/bn-IN.pak",
+        "contentFiles/any/any/WebView2/Locales/bs.pak",
+        "contentFiles/any/any/WebView2/Locales/ca-Es-VALENCIA.pak",
+        "contentFiles/any/any/WebView2/Locales/ca.pak",
+        "contentFiles/any/any/WebView2/Locales/cs.pak",
+        "contentFiles/any/any/WebView2/Locales/cy.pak",
+        "contentFiles/any/any/WebView2/Locales/da.pak",
+        "contentFiles/any/any/WebView2/Locales/de.pak",
+        "contentFiles/any/any/WebView2/Locales/el.pak",
+        "contentFiles/any/any/WebView2/Locales/en-GB.pak",
+        "contentFiles/any/any/WebView2/Locales/en-US.pak",
+        "contentFiles/any/any/WebView2/Locales/es-419.pak",
+        "contentFiles/any/any/WebView2/Locales/es.pak",
+        "contentFiles/any/any/WebView2/Locales/et.pak",
+        "contentFiles/any/any/WebView2/Locales/eu.pak",
+        "contentFiles/any/any/WebView2/Locales/fa.pak",
+        "contentFiles/any/any/WebView2/Locales/fi.pak",
+        "contentFiles/any/any/WebView2/Locales/fil.pak",
+        "contentFiles/any/any/WebView2/Locales/fr-CA.pak",
+        "contentFiles/any/any/WebView2/Locales/fr.pak",
+        "contentFiles/any/any/WebView2/Locales/ga.pak",
+        "contentFiles/any/any/WebView2/Locales/gd.pak",
+        "contentFiles/any/any/WebView2/Locales/gl.pak",
+        "contentFiles/any/any/WebView2/Locales/gu.pak",
+        "contentFiles/any/any/WebView2/Locales/he.pak",
+        "contentFiles/any/any/WebView2/Locales/hi.pak",
+        "contentFiles/any/any/WebView2/Locales/hr.pak",
+        "contentFiles/any/any/WebView2/Locales/hu.pak",
+        "contentFiles/any/any/WebView2/Locales/id.pak",
+        "contentFiles/any/any/WebView2/Locales/is.pak",
+        "contentFiles/any/any/WebView2/Locales/it.pak",
+        "contentFiles/any/any/WebView2/Locales/ja.pak",
+        "contentFiles/any/any/WebView2/Locales/ka.pak",
+        "contentFiles/any/any/WebView2/Locales/kk.pak",
+        "contentFiles/any/any/WebView2/Locales/km.pak",
+        "contentFiles/any/any/WebView2/Locales/kn.pak",
+        "contentFiles/any/any/WebView2/Locales/ko.pak",
+        "contentFiles/any/any/WebView2/Locales/kok.pak",
+        "contentFiles/any/any/WebView2/Locales/lb.pak",
+        "contentFiles/any/any/WebView2/Locales/lo.pak",
+        "contentFiles/any/any/WebView2/Locales/lt.pak",
+        "contentFiles/any/any/WebView2/Locales/lv.pak",
+        "contentFiles/any/any/WebView2/Locales/mi.pak",
+        "contentFiles/any/any/WebView2/Locales/mk.pak",
+        "contentFiles/any/any/WebView2/Locales/ml.pak",
+        "contentFiles/any/any/WebView2/Locales/mr.pak",
+        "contentFiles/any/any/WebView2/Locales/ms.pak",
+        "contentFiles/any/any/WebView2/Locales/mt.pak",
+        "contentFiles/any/any/WebView2/Locales/nb.pak",
+        "contentFiles/any/any/WebView2/Locales/ne.pak",
+        "contentFiles/any/any/WebView2/Locales/nl.pak",
+        "contentFiles/any/any/WebView2/Locales/nn.pak",
+        "contentFiles/any/any/WebView2/Locales/or.pak",
+        "contentFiles/any/any/WebView2/Locales/pa.pak",
+        "contentFiles/any/any/WebView2/Locales/pl.pak",
+        "contentFiles/any/any/WebView2/Locales/pt-BR.pak",
+        "contentFiles/any/any/WebView2/Locales/pt-PT.pak",
+        "contentFiles/any/any/WebView2/Locales/qu.pak",
+        "contentFiles/any/any/WebView2/Locales/ro.pak",
+        "contentFiles/any/any/WebView2/Locales/ru.pak",
+        "contentFiles/any/any/WebView2/Locales/sk.pak",
+        "contentFiles/any/any/WebView2/Locales/sl.pak",
+        "contentFiles/any/any/WebView2/Locales/sq.pak",
+        "contentFiles/any/any/WebView2/Locales/sr-Cyrl-BA.pak",
+        "contentFiles/any/any/WebView2/Locales/sr-Latn-RS.pak",
+        "contentFiles/any/any/WebView2/Locales/sr.pak",
+        "contentFiles/any/any/WebView2/Locales/sv.pak",
+        "contentFiles/any/any/WebView2/Locales/ta.pak",
+        "contentFiles/any/any/WebView2/Locales/te.pak",
+        "contentFiles/any/any/WebView2/Locales/th.pak",
+        "contentFiles/any/any/WebView2/Locales/tr.pak",
+        "contentFiles/any/any/WebView2/Locales/tt.pak",
+        "contentFiles/any/any/WebView2/Locales/ug.pak",
+        "contentFiles/any/any/WebView2/Locales/uk.pak",
+        "contentFiles/any/any/WebView2/Locales/ur.pak",
+        "contentFiles/any/any/WebView2/Locales/vi.pak",
+        "contentFiles/any/any/WebView2/Locales/zh-CN.pak",
+        "contentFiles/any/any/WebView2/Locales/zh-TW.pak",
+        "contentFiles/any/any/WebView2/MEIPreload/manifest.json",
+        "contentFiles/any/any/WebView2/MEIPreload/preloaded_data.pb",
+        "contentFiles/any/any/WebView2/PdfPreview/PdfPreviewHandler.dll",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Advertising",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Analytics",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/CompatExceptions",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Content",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Cryptomining",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Entities",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Fingerprinting",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/LICENSE",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Other",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/Social",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Mu/TransparentAdvertisers",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Advertising",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Analytics",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Content",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Cryptomining",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Entities",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Fingerprinting",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/LICENSE",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Other",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Social",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/Sigma/Staging",
+        "contentFiles/any/any/WebView2/Trust Protection Lists/manifest.json",
+        "contentFiles/any/any/WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll",
+        "contentFiles/any/any/WebView2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig",
+        "contentFiles/any/any/WebView2/WidevineCdm/manifest.json",
+        "contentFiles/any/any/WebView2/concrt140.dll",
+        "contentFiles/any/any/WebView2/d3dcompiler_47.dll",
+        "contentFiles/any/any/WebView2/delegatedWebFeatures.sccd",
+        "contentFiles/any/any/WebView2/dual_engine_adapter_x64.dll",
+        "contentFiles/any/any/WebView2/dxcompiler.dll",
+        "contentFiles/any/any/WebView2/dxil.dll",
+        "contentFiles/any/any/WebView2/edge_feedback/camera_mf_trace.wprp",
+        "contentFiles/any/any/WebView2/edge_feedback/mf_trace.wprp",
+        "contentFiles/any/any/WebView2/edge_game_assist/EdgeGameAssist.msix",
+        "contentFiles/any/any/WebView2/edge_game_assist/VERSION",
+        "contentFiles/any/any/WebView2/eventlog_provider.dll",
+        "contentFiles/any/any/WebView2/ffmpeg.dll",
+        "contentFiles/any/any/WebView2/icudtl.dat",
+        "contentFiles/any/any/WebView2/learning_tools.dll",
+        "contentFiles/any/any/WebView2/libEGL.dll",
+        "contentFiles/any/any/WebView2/libGLESv2.dll",
+        "contentFiles/any/any/WebView2/microsoft_shell_integration.dll",
+        "contentFiles/any/any/WebView2/mip_core.dll",
+        "contentFiles/any/any/WebView2/mip_protection_sdk.dll",
+        "contentFiles/any/any/WebView2/msedge.dll",
+        "contentFiles/any/any/WebView2/msedge.dll.sig",
+        "contentFiles/any/any/WebView2/msedge_100_percent.pak",
+        "contentFiles/any/any/WebView2/msedge_200_percent.pak",
+        "contentFiles/any/any/WebView2/msedge_elf.dll",
+        "contentFiles/any/any/WebView2/msedge_wer.dll",
+        "contentFiles/any/any/WebView2/msedgewebview2.exe",
+        "contentFiles/any/any/WebView2/msedgewebview2.exe.sig",
+        "contentFiles/any/any/WebView2/mspdf.dll",
+        "contentFiles/any/any/WebView2/msvcp140.dll",
+        "contentFiles/any/any/WebView2/msvcp140_codecvt_ids.dll",
+        "contentFiles/any/any/WebView2/notification_helper.exe",
+        "contentFiles/any/any/WebView2/oneauth.dll",
+        "contentFiles/any/any/WebView2/oneds.dll",
+        "contentFiles/any/any/WebView2/onnxruntime.dll",
+        "contentFiles/any/any/WebView2/onramp.dll",
+        "contentFiles/any/any/WebView2/prefs_enclave_x64.dll",
+        "contentFiles/any/any/WebView2/resources.pak",
+        "contentFiles/any/any/WebView2/show_third_party_software_licenses.bat",
+        "contentFiles/any/any/WebView2/telclient.dll",
+        "contentFiles/any/any/WebView2/v8_context_snapshot.bin",
+        "contentFiles/any/any/WebView2/vccorlib140.dll",
+        "contentFiles/any/any/WebView2/vcruntime140.dll",
+        "contentFiles/any/any/WebView2/vcruntime140_1.dll",
+        "contentFiles/any/any/WebView2/vk_swiftshader.dll",
+        "contentFiles/any/any/WebView2/vk_swiftshader_icd.json",
+        "contentFiles/any/any/WebView2/vulkan-1.dll",
+        "contentFiles/any/any/WebView2/wdag.dll",
+        "contentFiles/any/any/WebView2/webview2_integration.dll",
+        "contentFiles/any/any/WebView2/wns_push_client.dll",
+        "webview2.runtime.x64.130.0.2849.80.nupkg.sha512",
+        "webview2.runtime.x64.nuspec"
+      ]
+    },
+    "Win32Interop.Dwmapi/1.0.1": {
+      "sha512": "Jkaj/RhMmW0h/eSWV1YKlCW1bkjW9MCGxn21I6cJscz1zb5bq/I6iSfwZxSI63aVo18BSKyONQ78iNZzd4frWA==",
+      "type": "package",
+      "path": "win32interop.dwmapi/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Win32Interop.Dwmapi.dll",
+        "lib/Win32Interop.Dwmapi.pdb",
+        "win32interop.dwmapi.1.0.1.nupkg.sha512",
+        "win32interop.dwmapi.nuspec"
+      ]
+    },
+    "Win32Interop.Gdi32/1.0.1": {
+      "sha512": "+rtmt0ae7tRfBIEb7kPlw2cWNABLUp5JLqIPi7rMK3HQLWdWIs8T3iEwki2SCSdRHmDSH5S34HE+ytxRsUDEhQ==",
+      "type": "package",
+      "path": "win32interop.gdi32/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Win32Interop.Gdi32.XML",
+        "lib/Win32Interop.Gdi32.dll",
+        "lib/Win32Interop.Gdi32.pdb",
+        "win32interop.gdi32.1.0.1.nupkg.sha512",
+        "win32interop.gdi32.nuspec"
+      ]
+    },
+    "Win32Interop.Kernel32/1.0.1": {
+      "sha512": "8ApAA5F8N7qZm+SLkfY61qk1mzCsbu8KFEBNnTMwyWO5vbTTXl/0PfT99thP3X5Di+lKWvXvj381N2UG3DYhNQ==",
+      "type": "package",
+      "path": "win32interop.kernel32/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Win32Interop.Kernel32.dll",
+        "lib/Win32Interop.Kernel32.pdb",
+        "win32interop.kernel32.1.0.1.nupkg.sha512",
+        "win32interop.kernel32.nuspec"
+      ]
+    },
+    "Win32Interop.User32/1.0.1": {
+      "sha512": "GrtMD4QYCys/wHKDrvIM62YJJQCeQfPkCK7kYN+dlcz+jVTi2Abtsy+4rzfFzHfhYWpBeA3EoXzqQAJVfN9N/w==",
+      "type": "package",
+      "path": "win32interop.user32/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Win32Interop.User32.dll",
+        "lib/Win32Interop.User32.pdb",
+        "win32interop.user32.1.0.1.nupkg.sha512",
+        "win32interop.user32.nuspec"
+      ]
+    },
+    "Win32Interop.Uxtheme/1.0.1": {
+      "sha512": "2EjHI+iExj5gl+p4LceG6wOz8FsWLVrbP51D60/ANHiYBSPS5NL3dms1jMNT+0VFQv3vJ0j8FAeWZCFLC1RC+A==",
+      "type": "package",
+      "path": "win32interop.uxtheme/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Win32Interop.Uxtheme.dll",
+        "lib/Win32Interop.Uxtheme.pdb",
+        "win32interop.uxtheme.1.0.1.nupkg.sha512",
+        "win32interop.uxtheme.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "EasyTabs >= 2.0.0",
       "HtmlAgilityPack >= 1.11.70",
-      "Microsoft.Web.WebView2 >= 1.0.2849.39"
+      "ITHit.FileSystem.Windows >= 8.3.27213",
+      "Microsoft.Web.WebView2 >= 1.0.2849.39",
+      "WebView2.Runtime.X64 >= 130.0.2849.80",
+      "jQuery.FileUpload >= 10.4.0"
     ]
   },
   "packageFolders": {
@@ -240,13 +2738,29 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "EasyTabs": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.11.70, )"
           },
+          "ITHit.FileSystem.Windows": {
+            "target": "Package",
+            "version": "[8.3.27213, )"
+          },
           "Microsoft.Web.WebView2": {
             "target": "Package",
             "version": "[1.0.2849.39, )"
+          },
+          "WebView2.Runtime.X64": {
+            "target": "Package",
+            "version": "[130.0.2849.80, )"
+          },
+          "jQuery.FileUpload": {
+            "target": "Package",
+            "version": "[10.4.0, )"
           }
         },
         "imports": [
@@ -271,5 +2785,77 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EasyTabs 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EasyTabs",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Svg 2.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Svg",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Dwmapi 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Dwmapi",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Gdi32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Gdi32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Kernel32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Kernel32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.User32 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.User32",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Win32Interop.Uxtheme 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Win32Interop.Uxtheme",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
