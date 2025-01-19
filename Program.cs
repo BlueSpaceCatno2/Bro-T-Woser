@@ -214,15 +214,18 @@ namespace WebBrowserApp
             webView21.Width = this.ClientSize.Width - 100;
             webView21.Height = this.ClientSize.Height - 30;
         }
-
-
-
+        static string RUrl = "";
+        static bool unstable = false;
+        static string urlbak = "";
         //webView21.CoreWebView2.Navigate(url);
         private Dictionary<TabPage, string> tabUrls = new Dictionary<TabPage, string>();
         public async void SearchIT()
         {
+
+            var selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
             try
             {
+
                 string url = textBox2.Text;
 
                 if (string.IsNullOrWhiteSpace(url))
@@ -233,6 +236,7 @@ namespace WebBrowserApp
                 {
                     if (!url.StartsWith("http"))
                     {
+
                         if (!url.StartsWith("www."))
                         {
                             static bool splitnum(string input)
@@ -249,10 +253,9 @@ namespace WebBrowserApp
 
                                 return false;
                             }
-
                             if (!url.Contains("."))
                             {
-                                var selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
+                                selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
                                 selectedSearchEngine.Query = "q=" + Uri.EscapeDataString(url);
                                 url = selectedSearchEngine.ToString();
                             }
@@ -260,11 +263,14 @@ namespace WebBrowserApp
                             {
                                 if (splitnum(url) == false)
                                 {
+
+                                    RUrl = url;
                                     url = "https://www." + url;
+                                    unstable = true;
                                 }
                                 else
                                 {
-                                    var selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
+                                    selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
                                     selectedSearchEngine.Query = "q=" + Uri.EscapeDataString(url);
                                     url = selectedSearchEngine.ToString();
                                 }
@@ -272,13 +278,38 @@ namespace WebBrowserApp
                         }
                         else
                         {
+
+                            RUrl = url;
                             url = "https://" + url;
+                            unstable = true;
+
                         }
                     }
                 }
-                textBox2.Text = url;
-                await webView21.EnsureCoreWebView2Async(null);
-                webView21.CoreWebView2.Navigate(url);
+                selectedSearchEngine = new UriBuilder(sites[currentSiteIndex]);
+                selectedSearchEngine.Query = "q=" + Uri.EscapeDataString(RUrl);
+                RUrl = selectedSearchEngine.ToString();
+                if (unstable)
+                {
+                    try
+                    {
+                        textBox2.Text = url;
+                        await webView21.EnsureCoreWebView2Async(null);
+                        webView21.CoreWebView2.Navigate(url);
+                    }
+                    catch (Exception ex)
+                    {
+                        textBox2.Text = RUrl;
+                        await webView21.EnsureCoreWebView2Async(null);
+                        webView21.CoreWebView2.Navigate(RUrl);
+                    }
+                }
+                else
+                {
+                    textBox2.Text = url;
+                    await webView21.EnsureCoreWebView2Async(null);
+                    webView21.CoreWebView2.Navigate(url);
+                }
 
             }
             catch (Exception error)
@@ -683,5 +714,6 @@ namespace WebBrowserApp
         {
 
         }
+
     }
 }
