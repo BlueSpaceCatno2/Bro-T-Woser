@@ -9,13 +9,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<ItemGroup>
+  <Reference Include="Microsoft.Web.WebView2.WinForms">
+    <HintPath>$(NuGetPackageRoot)microsoft.web.webview2\1.0.3719.77\lib\net5.0-windows10.0.17763.0\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
+</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="EasyTabs" Version="2.0.0" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.70" />
-    <PackageReference Include="ITHit.FileSystem.Windows" Version="8.3.27213" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="ITHit.FileSystem.Windows" Version="9.0.29575" />
     <PackageReference Include="jQuery.FileUpload" Version="10.4.0" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2849.39" />
-    <PackageReference Include="WebView2.Runtime.X64" Version="130.0.2849.80" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3719.77" />
+    <PackageReference Include="WebView2.Runtime.X64" Version="145.0.3800.58" />
   </ItemGroup>
 
   <ItemGroup>
